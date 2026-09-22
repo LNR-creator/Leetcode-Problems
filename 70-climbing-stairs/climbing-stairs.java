@@ -1,16 +1,16 @@
 class Solution {
     public int climbStairs(int n) {
-       if(n<=2) return n;
-
-       int p1 = 1;int p2 = 2;
-
-       for(int i=3;i <= n;i++)
-       {
-        int curr = p1 + p2;
-        p1 = p2;
-        p2 = curr;
-       }
-
-       return p2;
+        if(n<=2) return n;
+        // if(n==2) return 2;
+        int one=1;
+        int two=2;
+        int sum=0;
+        for(int i=3;i<=n;i++)
+        {   
+            sum=one+two;
+            one=two;
+            two=sum;
+        }
+        return two;
     }
 }
