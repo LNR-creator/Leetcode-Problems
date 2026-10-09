@@ -9,10 +9,10 @@ class Solution {
             if(hm.containsKey(comple)){
                 return new int[]{hm.get(comple),i};
             }
-            else{
-                hm.put(nums[i],i);
-            }
+
+            hm.put(nums[i],i);
         }
         return new int[]{-1,-1};
     }
+
 }
